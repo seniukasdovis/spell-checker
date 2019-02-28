@@ -17,7 +17,7 @@ fs.readFile(DICTIONARY, 'utf8', (err, dictionary) => {
 
 	const WORDS = new Set(dictionary.split('\n').map(x => x.toLowerCase()))
 
-	//MAP STRUCT TO DETERMINE MOST COMMONLY USED WORD IN THE TEXT
+	//MAP OBJECT TO DETERMINE MOST COMMONLY USED WORD IN THE TEXT
 	const wordsFrequency = new Map()
 
 	fs.readFile(TEXT, 'utf8', (err, data) => {
