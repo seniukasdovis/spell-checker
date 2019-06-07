@@ -22,11 +22,9 @@ module.exports = {
 	},
 
 	isCheckable: function(word) {
-		if(
-			word.length !== 0
-			&& !word.includes(' ')
-			&& isNaN(word)
-			) return true
+		return word.length !== 0
+		       && !word.includes(' ')
+		       && isNaN(word)
 	}
 
 }
